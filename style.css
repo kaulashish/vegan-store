@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#main-container{
+    height: 100vh; /* Viewport height: It is a unit which 
+                      is whatever that is visible in the screen,
+                      so 100vh will be the whole screen */
+    background-image: url('https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png');
+    background-size: cover; /* Cover covers the entire screen.
+                               Other sizes are using custom x,y 
+                               values and contain which only stretches 
+                               till the aspect ratio of image */  
+    background-position: left;
+}
+
+#topbar{
+    /* width: calc(100% - 60px) if box sizing is content-box */
+    width: 100%;
+    height: 77px;
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    padding: 0px 30px;
+    align-items: center;
+    justify-content: space-between;
+    
+    position: fixed;
+}
+
+#topbar a{
+    font-size: 14px;
+    margin: 0 24px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+#logo-img{
+    width: 40px;
+}
+
+#green-btn-primary{
+    margin: 0 16px;
+    border: none;
+    outline: none;
+    padding: 9px 34px;
+    background-color: #AAD236;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+#landing-section{
+    width: 100%;
+    height: 100vh;
+
+    background-image: url('https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png');
+    background-size: cover;
+    background-position: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#landing-section h1{
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 44px;
+    letter-spacing: 8.8px;
+    width: 100%;
+}
+
+#landing-section p{
+    color: #8b8b99;
+    text-align: center;
+    width: 100%;
+    padding-top: 32px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+#card-container{
+    display: flex;
+    text-align: center;
+}
+
+#card-1{
+    width: 100%;
+    background-color: #5ACDA6;
+    padding: 112px 48px;
+    box-sizing: border-box;
+}
+#card-2{
+    width: 100%;
+    background-color: #91AC41;
+    padding: 112px 48px;
+    box-sizing: border-box;
+}
+#card-3{
+    width: 100%;
+    background-color: #E4B476;
+    padding: 112px 48px;
+    box-sizing: border-box;
+}
+#card-4{
+    width: 100%;
+    background-color: #F69DAD;
+    padding: 112px 48px;
+    box-sizing: border-box;
+}
+
+
+.card-icon{
+    color: white;
+    font-size: 96px;
+    transition: all 0.3s;
+}
+
+.card-icon:hover{
+    font-size: 110px;
+}
+#card-container h1{
+    color: white;
+}
+
+#card-container p{
+    color: white;
+}
+
+#store-section{
+    background-color: #F7EEE2;
+    padding: 75px 0;
+    text-align: center;
+}
+
+#fresh-food-heading{
+    color: #91ac41;
+    font-size: 26px;
+    font-family: 'Caveat', cursive;
+    margin
+}
+
+#store-section h1{
+    margin: 0;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+#store-description{
+    color: #8b8b99;
+    font-size: 18px;
+    margin-bottom: 60px;
+    letter-spacing: 0.5px;
+}
+
+#store-items-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1140px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+}
+
+.store-item{
+    width: 25%;
+    padding: 24px;
+    text-align: center;
+}
+
+.store-icon{
+    font-size: 60px;
+    padding: 40px;
+    background-color: #e3b375;
+    color: white;
+    border-radius: 50%;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.store-icon:hover{
+    font-size: 73px;
+    padding: 43px;
+}
+
+.store-item p{
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        color: #8b8b99;
+    }
+
+/* #icon-wrapper{
+    color: white;
+    background-color: #e3b375;
+    padding 40px;
+    border: none;
+    width: 60px;
+    height: 60px;
+} */
+
+/* responsive-design */
+@media (max-width: 900px){
+        #topbar a{
+        display: none;
+    }
+
+    #landing-section h1{
+        font-size: 28px;
+    }
+
+    #card-container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #store-items-wrapper{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .store-item{
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .store-item p{
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        font-weight: 600;
+        color: #8b8b99;
+    }
+
+    .store-icon:hover{
+    font-size: 73px;
+    padding: 43px;
+    }
+}
