@@ -129,7 +129,7 @@ body{
 }
 
 .card-icon:hover{
-    font-size: 110px;
+    transform: scale(1.1, 1.1);
 }
 #card-container h1{
     color: white;
@@ -188,12 +188,10 @@ body{
     color: white;
     border-radius: 50%;
     transition: all 0.3s;
-    display: inline-block;
 }
 
 .store-icon:hover{
-    font-size: 73px;
-    padding: 43px;
+    transform: scale(1.1, 1.1);
 }
 
 .store-item p{
@@ -249,7 +247,6 @@ body{
     }
 
     .store-icon:hover{
-    font-size: 73px;
-    padding: 43px;
+    transform: scale(1.1, 1.1);
     }
 }
